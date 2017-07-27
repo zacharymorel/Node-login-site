@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Are you logged in?</title>
+  </head>
+  <body>
+    <p>"Are you logged in?"</p>
+    <form class="loginAction" action="/login" method="post">
+      <label for="userName">Username: {{userName}}</label>
+      <input type="text" name="userName" placeholder="Your username?">
+      <label for="password">Password: {{password}}</label>
+      <input type="text" name="password" placeholder="password">
+      <button type="submit" name="button">Button</button>
+    </form>
+  </body>
+</html>
