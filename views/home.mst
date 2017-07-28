@@ -7,9 +7,9 @@
   <body>
     <p>"Are you logged in?"</p>
     <form class="loginAction" action="/login" method="post">
-      <label for="userName">Username: {{userName}}</label>
+      <label for="userName">Username:</label>
       <input type="text" name="userName" placeholder="Your username?">
-      <label for="password">Password: {{password}}</label>
+      <label for="password">Password:</label>
       <input type="text" name="password" placeholder="password">
       <button type="submit" name="button">Button</button>
     </form>

@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Your info</title>
   </head>
   <body>
+    <p>Your User Name: {{userName}}</p>
+    <p>Your password: {{password}}</p>
   </body>
 </html>
