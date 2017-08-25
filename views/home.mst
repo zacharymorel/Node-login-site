@@ -13,5 +13,6 @@
       <input type="text" name="passwordHash" placeholder="password">
       <button type="submit" name="button">Button</button>
     </form>
+    <p>{{err}}</p>
   </body>
 </html>
