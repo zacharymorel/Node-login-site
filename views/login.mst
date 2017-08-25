@@ -6,6 +6,6 @@
   </head>
   <body>
     <p>Your User Name: {{userName}}</p>
-    <p>Your password: {{password}}</p>
+    <p>Your Password: {{passwordHash}}</p>
   </body>
 </html>
