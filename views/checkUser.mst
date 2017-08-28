@@ -2,17 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Log In Page</title>
+    <title></title>
   </head>
   <body>
-    <p>Create Your User name and Password, please.</p>
-    <form class="createAction" action="/createUser" method="post">
+    <p>Log in Here please.</p>
+    <form class="loginAction" action="/checkUser" method="post">
       <label for="userName">Username:</label>
       <input type="text" name="userName" placeholder="Your username?">
       <label for="passwordHash">Password:</label>
       <input type="text" name="passwordHash" placeholder="password">
       <button type="submit" name="button">Button</button>
     </form>
-    <p>{{err}}</p>
+    <a href="/createUser">Click to Create your Username and Login</a>
   </body>
 </html>
