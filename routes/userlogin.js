@@ -2,22 +2,14 @@ const User = require('../models/usersSchema.js')
 // require objectId??
 
 module.exports = app => {
-  //just directly use a way to add the users and passwords in the mongodb-
-
-  // const authenticate = (request, response, next) => {
-  //   if (request.body.userName === 'foob' && request.body.password === 'doob') {
-  //     next()
-  //   } else {
-  //     response.render('home')
-  //   }
-  // }
-
+  //Display a form to create a user and password
   app.get('/', (request, response) => {
-    response.render('home')
+    response.render('createUser')
   })
 
   // User.use(authenticate)
 
+  //  Creates a User and Login in password
   app.post('/login', (request, response) => {
     User.create(request.body)
       .then(docs => {
