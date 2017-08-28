@@ -14,7 +14,7 @@ userSchema
   })
   .set(function(value) {
     const hash = bcrypt.hashSync(value, 8)
-    this.passswordHash = hash
+    this.passwordHash = hash
   })
 
 userSchema.methods.authenticate = function(password) {
@@ -25,7 +25,7 @@ userSchema.statics.authenticate = function(userName, password, done) {
   this.findOne({ userName: userName }, function(err, user) {
     if (err) {
       done(err, false)
-    } else if (user && user.authenticate(passwordHash)) {
+    } else if (user && user.authenticate(password)) {
       done(null, user)
     } else {
       done(null, false)

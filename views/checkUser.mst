@@ -9,10 +9,11 @@
     <form class="loginAction" action="/checkUser" method="post">
       <label for="userName">Username:</label>
       <input type="text" name="userName" placeholder="Your username?">
-      <label for="passwordHash">Password:</label>
-      <input type="text" name="passwordHash" placeholder="password">
+      <label for="password">Password:</label>
+      <input type="text" name="password" placeholder="password">
       <button type="submit" name="button">Button</button>
     </form>
+    {{err}}
     <a href="/createUser">Click to Create your Username and Login</a>
   </body>
 </html>
